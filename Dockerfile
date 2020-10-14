@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-MAINTAINER Luka Stosic INFOdation <lstosic@infodation.nl>
+MAINTAINER Tomasz Zwierzchoń <https://medium.com/@tozwierz>
 
 # Install curl
 RUN apk add --update curl
