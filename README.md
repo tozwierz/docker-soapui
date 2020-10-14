@@ -95,7 +95,6 @@ That image also contains tiny web server that runs on top of SoapUI that accepts
 
 ## Thanks to:
 - Luka Stošić (lukastosic): https://github.com/lukastosic and his docker soap ui image: https://github.com/lukastosic/docker-soapui
-- lukastosic/docker-soapui
 - Dj(ddavison): https://github.com/ddavison and his docker soap ui project: https://github.com/ddavison/docker-soapui
 - Phong Nhu (INFOdation)
 - Hugo Pragt (INFOdation)
