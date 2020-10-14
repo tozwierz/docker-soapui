@@ -1,7 +1,7 @@
 # SoapUI in docker
 
 ## Intro
-This Docker image is based on alpine jre-8 and contains SoapUI installation.
+This Docker image is based on alpine jre-8 and contains SoapUI installation updated to support SoapUI ver 5.4.0
 
 ## Who is this image for?
 Use this image if you need docker way to execute SoapUI tests (if that is your develpoment or CI process).
@@ -94,7 +94,8 @@ Alternatively, you can use different Docker image: https://hub.docker.com/r/ddav
 That image also contains tiny web server that runs on top of SoapUI that accepts commands, runs tests and responds with HTTP codes about test results.
 
 ## Thanks to:
-
+- Luka Stošić (lukastosic): https://github.com/lukastosic and his docker soap ui image: https://github.com/lukastosic/docker-soapui
+- lukastosic/docker-soapui
 - Dj(ddavison): https://github.com/ddavison and his docker soap ui project: https://github.com/ddavison/docker-soapui
 - Phong Nhu (INFOdation)
 - Hugo Pragt (INFOdation)
