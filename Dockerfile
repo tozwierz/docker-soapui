@@ -1,16 +1,15 @@
 FROM openjdk:8-jre-alpine
-MAINTAINER Luka Stosic INFOdation <lstosic@infodation.nl>
+MAINTAINER Tomasz Zwierzchoń <https://medium.com/@tozwierz>
 
 # Install curl
-RUN apk add --update curl && \
-    rm -rf /var/cache/apk/*
+RUN apk add --update curl
 
 # SOAP UI Version to download
-ENV SOAPUI_VERSION 5.2.1
+ENV SOAPUI_VERSION 5.4.0
 
 # Download and unarchive SoapUI
-RUN mkdir -p /opt &&\
-    curl  http://cdn01.downloads.smartbear.com/soapui/${SOAPUI_VERSION}/SoapUI-${SOAPUI_VERSION}-linux-bin.tar.gz \
+RUN mkdir -p /opt && \
+    curl https://dl.eviware.com/soapuios/${SOAPUI_VERSION}/SoapUI-${SOAPUI_VERSION}-linux-bin.tar.gz \
     | gunzip -c - | tar -xf - -C /opt && \
     ln -s /opt/SoapUI-${SOAPUI_VERSION} /opt/SoapUI
 
